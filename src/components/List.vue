@@ -70,5 +70,27 @@ const filteredEmojis = computed(() => {
         outline: none;
         font-size: 1.1rem;
     }
+    
+    @media screen and (min-width: 1024px) {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+        }
+    
+        
+    }
+
+    @media screen and (min-width: 1440px) {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+        }
+        .emoji {
+            font-size: 1.8rem;
+        }
+        
+    }
 
 </style>
