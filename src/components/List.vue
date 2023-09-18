@@ -1,7 +1,10 @@
 <template>
     <main>
-        <input type="text" class="searchbar" v-model="searchInput" placeholder="Rechercher un emoji">
-
+        <div class="searchbar_wrapper">
+            <input type="text" class="searchbar" v-model="searchInput" placeholder="Rechercher un emoji">
+            <button class="bin" @click="searchInput = ''"><i class="gg-trash"></i></button>
+        </div>
+            
         <ul>
             <li class="emoji" @click="$emit('selectedEmoji', emoji)" v-for="emoji in filteredEmojis" :key="emoji.name">
                 <span class="symbol">{{ emoji.emoji }}</span>
@@ -69,6 +72,16 @@ const filteredEmojis = computed(() => {
         margin-bottom: 2rem;
         outline: none;
         font-size: 1.1rem;
+    }
+    .searchbar_wrapper {
+        position: relative;
+    }
+
+    .bin {
+        position: absolute;
+        z-index: 2;
+        right: 5px;
+        top: 5px;
     }
     
     @media screen and (min-width: 1024px) {
