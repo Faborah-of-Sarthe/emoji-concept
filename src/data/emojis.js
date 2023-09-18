@@ -172,7 +172,7 @@ export default [
         "emoji": "👗",
         "name": "clothes",
         "meaning": "Vêtements, Accessoires, Costume",
-        "keywords": "robe, jupe, chemise, pantalon, chaussure, chapeau, veste, manteau, pull, gant, écharpe, cravate, ceinture, bijoux, sac"
+        "keywords": "vetements, jupe, chemise, pantalon, chaussure, chapeau, veste, manteau, pull, gant, écharpe, cravate, ceinture, bijoux, sac"
     },
     {
         "id": 27,
@@ -449,7 +449,7 @@ export default [
         "emoji": "🔩",
         "name": "screw",
         "meaning": "Métal",
-        "keywords": "métal, vis, boulon, écrou, clou, fer, acier"
+        "keywords": "métal, metal, vis, boulon, écrou, clou, fer, acier"
     },
     {
         "id": 68,
