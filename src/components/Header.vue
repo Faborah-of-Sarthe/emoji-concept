@@ -28,7 +28,15 @@ header {
     header {
         width: 50%;
         height: 100%;
+        padding: 1rem 3rem;
     }
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        padding: 1rem 10rem;
+    }
+    
 }
     
 </style>

@@ -15,12 +15,16 @@
             <div class="selected-emojis__buttons">
                 <Buttons />
             </div>
+            <div class="copy-wrapper">
+                <CopyButton />
+            </div>
         </div>
 </template>
 
 <script setup>
 import { inject } from 'vue';
 import Buttons from './Buttons.vue';
+import CopyButton from './CopyButton.vue';
 
    // Inject the selectedEmojis array, and array tools from the App.vue component
    const { 
@@ -28,7 +32,10 @@ import Buttons from './Buttons.vue';
     stringifiedConcept,
     isOneEmojiSelected, 
     isTwoOrMoreSelected,
-    } = inject('selectedEmojis'); 
+    stringifiedConceptWithUrl,
+    } = inject('selectedEmojis');
+    
+    
 
 </script>
 
@@ -57,5 +64,11 @@ import Buttons from './Buttons.vue';
         font-size: 2rem;
     }
 
+    .copy-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+  
     
 </style>

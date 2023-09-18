@@ -98,6 +98,10 @@ const stringifiedConcept = computed(() => {
   return string;
 });
 
+// Get the stringified concept and concatenate the current page url
+const stringifiedConceptWithUrl = computed(() => {
+  return stringifiedConcept.value + ' Retrouve le sens de chaque emoji sur : ' + window.location.href;
+});
 
 
 // Check if the selectedEmojis array contains exactly one emoji
@@ -116,6 +120,7 @@ provide('selectedEmojis', {
   isLastArrayEmpty,
   isAnyEmojiSelected,
   stringifiedConcept,
+  stringifiedConceptWithUrl,
   areManySubConcepts,
   isOneEmojiSelected,
   isTwoOrMoreSelected,

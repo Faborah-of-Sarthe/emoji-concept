@@ -21,6 +21,7 @@ import emojis from '../data/emojis.js';
 
     main {
         padding: 1rem;
+        overflow-y: scroll;
     }
 
     .emoji {
