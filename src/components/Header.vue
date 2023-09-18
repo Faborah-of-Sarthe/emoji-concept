@@ -34,6 +34,8 @@ header {
     background-color: #f5f5f5;
     padding: 1rem;
     width: 100%;
+    position: sticky;
+    top: 0; 
 }
 .mark {
     color: #f5f5f5;

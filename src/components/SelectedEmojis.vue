@@ -41,11 +41,6 @@ import CopyButton from './CopyButton.vue';
 
 <style scoped lang="scss">
 
-    .concept-wrapper {
-        position: sticky;
-        top: 0;
-    }
-
    
     .selected-emojis__buttons {
         display: flex;
