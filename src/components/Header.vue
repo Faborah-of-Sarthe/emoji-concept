@@ -36,6 +36,7 @@ header {
     width: 100%;
     position: sticky;
     top: 0; 
+    z-index: 3;
 }
 .mark {
     color: #f5f5f5;
